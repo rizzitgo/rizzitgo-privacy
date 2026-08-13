@@ -98,15 +98,30 @@
     coupon-restore requests are processed in real time through the
     RizzitGO API and are <strong>not stored by the bot</strong>.
   </li>
+
+  <li>
+    To process the <strong>Spin feature</strong>. Spin requests, including
+    requests involving valid shipped parcels and extra spins, are processed
+    in real time through the RizzitGO API. Information required to process
+    the Spin request is used only to verify the request and process the
+    corresponding result or coupon.
+  </li>
+
+  <li>
+    Spin results and related redemption information are delivered to the
+    user through <strong>Discord Direct Messages (DMs)</strong>. The
+    information exchanged for this purpose is <strong>not stored by the
+    bot</strong> after the request has been processed.
+  </li>
 </ul>
 
 <h2>3. Data Sharing</h2>
 
 <p>
   We only communicate with the <strong>RizzitGO website API
-  (our own platform)</strong> to verify parcels and process coupons.
-  We do <strong>not</strong> sell, rent, or share your data with any
-  unrelated third-party companies for commercial purposes.
+  (our own platform)</strong> to verify parcels and process coupons and
+  Spin requests. We do <strong>not</strong> sell, rent, or share your data
+  with any unrelated third-party companies for commercial purposes.
 </p>
 
 <h2>4. Data Retention</h2>
@@ -124,7 +139,8 @@
   </li>
 
   <li>
-    Real-time coupon and welcome-message features do not retain any data.
+    Real-time coupon, coupon-restore, Spin, and welcome-message features
+    do not retain data in the bot after the request has been processed.
   </li>
 </ul>
 
