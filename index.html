@@ -4,55 +4,167 @@
 <meta charset="UTF-8">
 <title>Privacy Policy - RizzitGO Bot</title>
 <style>
-  body { font-family: Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 0 20px; line-height: 1.6; color: #222; }
-  h1 { border-bottom: 2px solid #5865F2; padding-bottom: 10px; }
-  h2 { color: #5865F2; margin-top: 30px; }
-  footer { margin-top: 40px; font-size: 0.9em; color: #666; }
+  body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+    line-height: 1.6;
+    color: #222;
+  }
+
+  h1 {
+    border-bottom: 2px solid #5865F2;
+    padding-bottom: 10px;
+  }
+
+  h2 {
+    color: #5865F2;
+    margin-top: 30px;
+  }
+
+  footer {
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #666;
+  }
+
+  code {
+    background: #f4f4f4;
+    padding: 2px 5px;
+    border-radius: 4px;
+  }
 </style>
 </head>
+
 <body>
 
 <h1>Privacy Policy</h1>
+
 <p><strong>Last updated:</strong> August 13, 2026</p>
 
-<p>This Privacy Policy explains how <strong>RizzitGO Bot</strong> ("we", "the bot") collects, uses, and protects information on Discord.</p>
+<p>
+  This Privacy Policy explains what data the <strong>RizzitGO Discord Bot</strong>
+  ("the bot", "we", "us") collects, how it is used, how long it is kept,
+  and your rights regarding your data.
+</p>
 
 <h2>1. Data We Collect</h2>
-<p>RizzitGO Bot collects and stores the following data:</p>
-<ul>
-  <li>Discord user ID</li>
-  <li>Server (guild) ID where the bot is used</li>
-  <li><strong>Parcel number</strong> submitted by users when entering the Milestone Lottery (via the <code>!entry</code> command)</li>
-</ul>
-<p>Beyond the parcel number used for lottery entries, the bot does not store message content or personal data. Features such as shipping coupons, coupon restoration, and the Spin feature communicate with the official RizzitGO website API to process requests. Data exchanged with our own API (e.g., your Discord ID and coupon code) is used only to complete the request and is not stored beyond what is required to deliver the result (e.g., sending the redemption link via DM).</p>
 
-<h2>2. How We Use the Data</h2>
-<p>The stored parcel number is used exclusively to:</p>
+<p>
+  The bot collects only the minimum data needed to operate its features:
+</p>
+
 <ul>
-  <li>Track and verify lottery entries per user (parcel numbers, entry counts, and draw eligibility)</li>
-  <li>Enforce entry limits (e.g., maximum entries per user)</li>
-</ul>
-<p>The following features are processed in real time through the RizzitGO website API and are not stored by the bot:</p>
-<ul>
-  <li>Delivering coupon redemption links via Direct Message</li>
-  <li>Restoring expired coupons when requested via the <code>!restore</code> command</li>
-  <li>Processing Spin feature requests</li>
+  <li>
+    <strong>Discord user ID</strong> — a numeric identifier used to track
+    lottery entries, enforce entry limits, and deliver messages such as
+    welcome messages and prize notifications.
+  </li>
+
+  <li>
+    <strong>Parcel / order numbers</strong> — submitted voluntarily by users
+    when entering the Milestone Lottery, used to verify eligibility against
+    our own platform.
+  </li>
+
+  <li>
+    <strong>Lottery activity data</strong> — associated with an entry,
+    including a timestamp, the milestone number, the parcel's status,
+    and, for winners, the draw date.
+  </li>
 </ul>
 
-<h2>3. Data Storage</h2>
-<p>Data is stored securely and is not sold, rented, or shared with third parties for commercial purposes. Coupon, discount, and Spin features communicate with the RizzitGO website API (our own platform) to generate results and redemption links. No data is shared with unrelated external companies.</p>
+<p>
+  We do <strong>not</strong> collect or store message content,
+  presence/status information, email addresses, or Discord profile data.
+</p>
+
+<h2>2. How We Use Your Data</h2>
+
+<ul>
+  <li>
+    To operate the <strong>Milestone Lottery</strong>: verify parcels,
+    track and count entries, enforce per-user entry limits, prevent duplicate
+    submissions, run draws, and notify winners.
+  </li>
+
+  <li>
+    To send <strong>automated welcome messages</strong> to new members.
+  </li>
+
+  <li>
+    To distribute and restore <strong>coupons</strong>. Coupon and
+    coupon-restore requests are processed in real time through the
+    RizzitGO API and are <strong>not stored by the bot</strong>.
+  </li>
+</ul>
+
+<h2>3. Data Sharing</h2>
+
+<p>
+  We only communicate with the <strong>RizzitGO website API
+  (our own platform)</strong> to verify parcels and process coupons.
+  We do <strong>not</strong> sell, rent, or share your data with any
+  unrelated third-party companies for commercial purposes.
+</p>
 
 <h2>4. Data Retention</h2>
-<p>Parcel numbers submitted for lottery entries are retained until the relevant milestone draw is completed, after which they may be deleted or anonymized. You may request the deletion of your data at any time by contacting us at the email below.</p>
 
-<h2>5. Your Rights</h2>
-<p>You have the right to request access to, correction of, or deletion of your personal data (including submitted parcel numbers) at any time.</p>
+<ul>
+  <li>
+    <strong>All stored data is automatically deleted within 30 days.</strong>
+    An automated daily process permanently removes any lottery entry or
+    winner record older than 30 days.
+  </li>
 
-<h2>6. Contact</h2>
-<p>For questions about this Privacy Policy or your data, contact us at: <strong>support@rizzitgo.com</strong>, or reach out through our official RizzitGO Discord server support channels.</p>
+  <li>
+    <strong>Pending lottery entries</strong> are also cleared after each
+    milestone draw is completed.
+  </li>
+
+  <li>
+    Real-time coupon and welcome-message features do not retain any data.
+  </li>
+</ul>
+
+<h2>5. Data Security</h2>
+
+<p>
+  Data is stored securely on our own infrastructure and is protected using
+  <strong>encryption at rest</strong>. Access is limited to authorized
+  operators of the bot.
+</p>
+
+<h2>6. Your Rights &amp; Data Deletion</h2>
+
+<p>
+  You may request access to, or deletion of, your data at any time.
+  Because all data is automatically deleted within 30 days, most data is
+  removed without any action on your part, but you can request immediate
+  deletion by contacting us.
+</p>
+
+<h2>7. Contact</h2>
+
+<ul>
+  <li>
+    <strong>Email:</strong>
+    support@rizzitgo.com
+  </li>
+
+  <li>
+    <strong>Discord:</strong>
+    through our official RizzitGO Discord server support channels
+  </li>
+</ul>
 
 <footer>
-  <p>This policy may be updated periodically. We recommend checking it regularly.</p>
+  <p>
+    By using the bot, you consent to this Privacy Policy. We may update
+    this policy from time to time; the "Last updated" date above reflects
+    the latest revision.
+  </p>
 </footer>
 
 </body>
